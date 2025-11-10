@@ -7,5 +7,5 @@ Gruppmedlemmar: Polina, Ella, Frida
 Medlemmar som deltagit: Polina, Frida
 Polina:
 Frida:
-Problem:
-Lösts:
+Problem: Försöka förstå github
+Lösts: Lyckades komma på hur github fungerar
