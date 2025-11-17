@@ -17,3 +17,11 @@ Frida: Skapat en funktion för slumpmässiga ord i ordlistan
 Ella: Sökt information om hur man skapar Ordgissningsspel
 Problem: Funktionen funkade inte som den skulle
 Lösts: Funktionen fungerar nu som den ska
+
+17/11-25
+Medlemmar som deltagit: Polina, Frida, Ella
+Polina: Gjort en plan för vilka saker vi tänker göra. Alltså: funktion för gissningen, funktion för rätt svar, funktion för fel svar. Konsulterat på kodning.
+Frida: Skrivit kod om hur saker ska fungera, räkna antal bokstäver i ordet, gjort så den hämtar ord från Ordlistan och fungerar tillsammans med resten av koden m.m.
+Ella: Research om hur koden ska vara uppbyggd
+Problem: Tänka på strukturen på spelet.
+Lösts: Research och kommunikation.

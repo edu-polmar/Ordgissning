@@ -6,6 +6,8 @@ def Hemligt():
     slump_ord = random.choice(Ord)
     return slump_ord
 
+print("Välkommen till Ord-Gissningsspelet! Du ska gissa ett ord på X antal bokstäver. Du har 10 felgissningar innan det Hemliga Ordet avslöjas. Lycka till!")
+
 
 hemligt_ord = Hemligt() #Hämtar slumpat ord från ordlistan (filen)
 gissning = ["_"] * len(hemligt_ord)
