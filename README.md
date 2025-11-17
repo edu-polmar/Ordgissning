@@ -15,5 +15,5 @@ Medlemmar som deltagit: Polina, Frida, Ella
 Polina: Börjat kolla hur koden ska fungera
 Frida: Skapat en funktion för slumpmässiga ord i ordlistan
 Ella: Sökt information om hur man skapar Ordgissningsspel
-Problem: Funktionen funkade som den ska
+Problem: Funktionen funkade inte som den skulle
 Lösts: Funktionen fungerar nu som den ska
