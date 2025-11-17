@@ -4,3 +4,4 @@ def Hemligt():
         Ord = fil.read().splitlines()
     slump_ord = random.choice(Ord)
     return slump_ord
+print (Hemligt())
