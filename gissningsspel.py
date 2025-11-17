@@ -1,3 +1,4 @@
+#Funktionen för att slumpa fram ett ord från ordlistan
 import random
 def Hemligt():
     with open("Ordlista.txt", "r", encoding="utf-8") as fil:
