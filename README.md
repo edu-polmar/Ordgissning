@@ -25,3 +25,11 @@ Frida: Skrivit kod om hur saker ska fungera, räkna antal bokstäver i ordet, gj
 Ella: Research om hur koden ska vara uppbyggd
 Problem: Tänka på strukturen på spelet.
 Lösts: Research och kommunikation.
+
+20/11-25
+Medlemmar som deltagit: Polina, Frida, Ella
+Polina: Kodat loop och löst problem
+Frida: Kodat loop och löst problem
+Ella: Kodat loop och löst problem.
+Problem: skriver inte utt ordet efter gissning. Loopen inte klar. Kan gissa samma bokstav flera gånger.
+Lösts: Fungerar nu. Den räknar ned gissningar och avslutar spelet när du använt upp alla felgissningar. Loopen fungerar.
