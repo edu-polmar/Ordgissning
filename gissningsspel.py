@@ -9,11 +9,11 @@ def Hemligt():
 print("Välkommen till Ord-Gissningsspelet! Du ska gissa ett ord på X antal bokstäver. Du har 10 felgissningar innan det Hemliga Ordet avslöjas. Lycka till!")
 
 #Ber dig skriva in en bokstav och gör den till en stor om du skrivit in en liten.
-str1 = input("Skriv en bokstav:  ")
 
-def Kontroll():
-    a = str1.upper()
-    return a
+def Kontroll(bokstav):
+    if len(bokstav) != 1 or not bokstav.isalpha():
+        return False
+    return True
 
 
 
