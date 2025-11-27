@@ -43,3 +43,4 @@ while Antal_gissningar > 0:
 
 if Antal_gissningar == 0:
     print("Du förlorade! Ordet var:", hemligt_ord)
+

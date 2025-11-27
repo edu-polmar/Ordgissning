@@ -33,3 +33,10 @@ Frida: Kodat loop och löst problem
 Ella: Kodat loop och löst problem.
 Problem: skriver inte utt ordet efter gissning. Loopen inte klar. Kan gissa samma bokstav flera gånger.
 Lösts: Fungerar nu. Den räknar ned gissningar och avslutar spelet när du använt upp alla felgissningar. Loopen fungerar.
+
+24/11-25
+medlemar som deltagit: polina och ella
+polina: fixat koden så att koden kontrollerar ifall spelarens gissning har redan testats. Därefter skriver ut ifall det händer.
+ella:fixat koden så att koden skriver ut dom rätt gissade bokstäverna på "rätt plats"
+problem: att koden skriver ut vilka bokstäver som du gissat rätt på rätt plats
+löst: fungerar nu, lägger ut dom rätt gissade bokstäverna på rätt plats
