@@ -12,10 +12,13 @@ print("Välkommen till Ord-Gissningsspelet! Du ska gissa ett ord på X antal bok
 
 def Kontroll(bokstav):
     if len(bokstav) != 1 or not bokstav.isalpha():
+        print("Ogiltigt tecken. Skriv en bokstav (A–Ö).")
         return False
-    return True
-
-
+    elif bokstav.upper() in Fel_bokstäver or bokstav.upper() in Rätt_bokstäver:
+        print("Du har redan gissat på den bokstaven. Försök igen.")
+        return False
+    else:
+        return True
 
 hemligt_ord = Hemligt() #Hämtar slumpat ord från ordlistan (filen)
 gissning = ["_"] * len(hemligt_ord)
@@ -30,16 +33,17 @@ while Antal_gissningar > 0:
     str1 = input("Skriv en bokstav:  ")
 
     if not Kontroll(str1):
-        print("Ogiltigt tecken. Skriv en bokstav (A–Ö).")
         continue
 
     if str1.upper() in hemligt_ord.upper():
         print("Rätt gissat")
+        Rätt_bokstäver.append(str1.upper())
 
     else : 
         print("Fel gissat, försök igen!")
         Antal_gissningar -= 1
         print("Gissningar kvar:", Antal_gissningar)
+        Fel_bokstäver.append(str1.upper())
 
 if Antal_gissningar == 0:
     print("Du förlorade! Ordet var:", hemligt_ord)

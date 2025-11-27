@@ -1,6 +1,5 @@
 #Funktionen för att slumpa fram ett ord från ordlistan
 import random
-
 def Hemligt():
     with open("Ordlista.txt", "r", encoding="utf-8") as fil:
         Ord = fil.read().splitlines()
@@ -13,8 +12,13 @@ print("Välkommen till Ord-Gissningsspelet! Du ska gissa ett ord på X antal bok
 
 def Kontroll(bokstav):
     if len(bokstav) != 1 or not bokstav.isalpha():
+        print("Ogiltigt tecken. Skriv en bokstav (A–Ö).")
         return False
-    return True
+    elif bokstav.upper() in Fel_bokstäver or bokstav.upper() in Rätt_bokstäver:
+        print("Du har redan gissat på den bokstaven. Försök igen.")
+        return False
+    else:
+        return True
 
 
 
@@ -33,7 +37,6 @@ while Antal_gissningar > 0:
     str1 = input("Skriv en bokstav:  ")
 
     if not Kontroll(str1):
-        print("Ogiltigt tecken. Skriv en bokstav (A–Ö).")
         continue
 
     if str1.upper() in hemligt_ord.upper():
@@ -53,6 +56,8 @@ while Antal_gissningar > 0:
         print("Fel gissat, försök igen!")
         Antal_gissningar -= 1
         print("Gissningar kvar:", Antal_gissningar, )
+
+    print( )
 
 if Antal_gissningar == 0:
     print("Du förlorade! Ordet var:", hemligt_ord)
