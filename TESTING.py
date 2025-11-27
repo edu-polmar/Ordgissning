@@ -50,7 +50,7 @@ while Antal_gissningar > 0: #Spel loopen
         if bokstav.upper()==str1.upper():
             gissning[i]=bokstav
 
-    print("_".join(gissning))
+    print(" ".join(gissning))
 
     if "_" not in gissning:
         print("Grattis! Du klarade ordet:", hemligt_ord)
