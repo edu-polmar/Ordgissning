@@ -29,22 +29,32 @@ Fel_bokstäver = []
 Rätt_bokstäver = []
 Antal_gissningar = 10 
 
-while Antal_gissningar > 0: 
+while Antal_gissningar > 0: #Spel loopen
     str1 = input("Skriv en bokstav:  ")
 
-    if not Kontroll(str1):
-        continue
-
-    if str1.upper() in hemligt_ord.upper():
+    if str1.upper() in hemligt_ord.upper() and Kontroll(str1) == True:
         print("Rätt gissat")
+        print("Gissningar kvar:", Antal_gissningar, )
         Rätt_bokstäver.append(str1.upper())
-
-    else : 
+    elif str1.upper() not in hemligt_ord.upper() and Kontroll(str1) == True: 
         print("Fel gissat, försök igen!")
         Antal_gissningar -= 1
-        print("Gissningar kvar:", Antal_gissningar)
+        print("Gissningar kvar:", Antal_gissningar, )
         Fel_bokstäver.append(str1.upper())
 
-if Antal_gissningar == 0:
+    for i, bokstav in enumerate(hemligt_ord):
+        if bokstav.upper()==str1.upper():
+            gissning[i]=bokstav
+
+    print(" ".join(gissning))
+
+    if "_" not in gissning:
+        print("Grattis! Du klarade ordet:", hemligt_ord)
+        break
+    print( )
+
+if Antal_gissningar == 0: #förlorare meddelande
     print("Du förlorade! Ordet var:", hemligt_ord)
+
+#Behöver en fråga för att spela igen
 

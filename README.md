@@ -35,8 +35,16 @@ Problem: skriver inte utt ordet efter gissning. Loopen inte klar. Kan gissa samm
 Lösts: Fungerar nu. Den räknar ned gissningar och avslutar spelet när du använt upp alla felgissningar. Loopen fungerar.
 
 24/11-25
-medlemar som deltagit: polina och ella
-polina: fixat koden så att koden kontrollerar ifall spelarens gissning har redan testats. Därefter skriver ut ifall det händer.
-ella:fixat koden så att koden skriver ut dom rätt gissade bokstäverna på "rätt plats"
-problem: att koden skriver ut vilka bokstäver som du gissat rätt på rätt plats
-löst: fungerar nu, lägger ut dom rätt gissade bokstäverna på rätt plats
+Medlemmar som deltagit: Polina och Ella
+Polina: fixat koden så att koden kontrollerar ifall spelarens gissning har redan testats. Därefter skriver ut ifall det händer.
+Ella:fixat koden så att koden skriver ut dom rätt gissade bokstäverna på "rätt plats".
+Problem: att koden skriver ut vilka bokstäver som du gissat rätt på rätt plats.
+Löst: fungerar nu, lägger ut dom rätt gissade bokstäverna på rätt plats.
+
+1/12-25
+Medlemmar som deltagit: Polina, Frida, Ella
+Polina: Skrivit kod för spela igen
+Frida: Skrivit kod för spela igen
+Ella: Skrivit kod för spela igen.
+Problem: Koden fungerade inte, skrev bara ut att man ska gissa efter att man sagt att man vill spela igen.
+Lösts: Koden fungerar nu. Flyttat ut Fel_gissningar, Rätt_Gissningar och Antal_gissningar i en yttre loop så att det kommer med när den loopar.
