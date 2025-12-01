@@ -40,3 +40,10 @@ polina: fixat koden så att koden kontrollerar ifall spelarens gissning har reda
 ella:fixat koden så att koden skriver ut dom rätt gissade bokstäverna på "rätt plats"
 problem: att koden skriver ut vilka bokstäver som du gissat rätt på rätt plats
 löst: fungerar nu, lägger ut dom rätt gissade bokstäverna på rätt plats
+
+27/11-25
+medlemmar som deltagit: polina och ella
+polina: fixat så det inte är understräck mellan det gissade bokstäverna till ordet och säger till om du redan har gissat en bokstav så att du inte kan gissa samma bokstav fler gånger
+ella: fixat så att man kan se vilka bokstäver som är rätt gissade i rätt ordning
+problem: att få ellas ändringar att laddas upp
+löst: fungerar nu, den lägger in och updaterar koden så att alla kan se den
