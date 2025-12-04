@@ -51,7 +51,7 @@ Lösts: Koden fungerar nu. Flyttat ut Fel_gissningar, Rätt_Gissningar och Antal
 
 4/12-25
 Medlemmar som deltagit: Polina, Frida, Ella
-Polina: Skrivit kommentarer
+Polina: Skrivit kommentarer, skapat en funktion för loopen för att fråga om spelaren vill spela igen. Loopen gäller tills användaren skriver en gilltig input.
 Frida: Skrivit kommentarer, lagt in printa fel bokstavs-listan/gissade
 Ella: Skrivit kommentarer
 Problem: Inga

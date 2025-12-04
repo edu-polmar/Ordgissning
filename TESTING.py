@@ -16,6 +16,13 @@ def Kontroll(bokstav, Fel_bokstäver, Rätt_bokstäver):
     else:
         return True
     
+def Kontrollsvar(svar): #Funktionen som kontrollerar spelarens svar om den vill spela igen eller inte.
+    if not svar.strip().lower().isalpha() and svar.strip().lower() not in ("j", "n"):
+        print("Ogiltigt val. Skriv 'j' för ja eller 'n' för nej.")
+        return False
+    elif svar.strip().lower() == "j":
+        return True
+    
 print("Välkommen till Ord-Gissningsspelet! Du har 10 felgissningar innan ordet avslöjas.")
 
 while True:  # Yttre loop för "spela igen"
@@ -57,9 +64,13 @@ while True:  # Yttre loop för "spela igen"
     if Antal_gissningar == 0:
         print("Du förlorade! Ordet var:", hemligt_ord)
 
-    Spela_igen = input("Vill du spela igen? (j/n): ").lower()
-    if Spela_igen != "j":
-        print("Tack för att du spelade!")
-        break
+    while True: #Loop för att fråga om spelaren vill spela igen tills ett giltigt svar ges
+        Spela_igen = input("Vill du spela igen? (j/n): ")
+        Kontrollsvar(Spela_igen)
+        if Kontrollsvar(Spela_igen) == True:
+            break
+        elif Spela_igen.strip().lower() == "n":
+            print("Tack för att du spelade!")
+            exit()
 
 
