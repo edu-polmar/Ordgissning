@@ -15,7 +15,7 @@ def Kontroll(bokstav, Fel_bokstäver, Rätt_bokstäver):
         return False
     else:
         return True
-
+    
 print("Välkommen till Ord-Gissningsspelet! Du har 10 felgissningar innan ordet avslöjas.")
 
 while True:  # Yttre loop för "spela igen"
@@ -49,7 +49,6 @@ while True:  # Yttre loop för "spela igen"
         print(" ".join(gissning))
         print("Gissningar kvar:", Antal_gissningar)
         print("Felgissade bokstäver:", Fel_bokstäver)
-        print(" ")
 
         if "_" not in gissning:
             print("Bra jobbat! Du gissade rätt ord. :", hemligt_ord)
