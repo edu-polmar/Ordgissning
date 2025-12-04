@@ -48,7 +48,7 @@ while True:  # Yttre loop för "spela igen"
 
         print(" ".join(gissning))
         print("Gissningar kvar:", Antal_gissningar)
-        print("Gissade bokstäver:", Fel_bokstäver)
+        print("Felgissade bokstäver:", Fel_bokstäver)
 
         if "_" not in gissning:
             print("Bra jobbat! Du gissade rätt ord. :", hemligt_ord)
