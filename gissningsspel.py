@@ -15,7 +15,7 @@ def Kontroll(bokstav, Fel_bokstäver, Rätt_bokstäver): #Funktionen som kontrol
         return False
     else:
         return True
-
+print(" ")
 print("Välkommen till Ord-Gissningsspelet! Du har 10 felgissningar innan ordet avslöjas.")
 
 while True:  #Yttre loop för "spela igen" som är oändlig tills spelaren väljer att sluta spela
