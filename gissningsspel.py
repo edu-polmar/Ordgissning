@@ -1,12 +1,12 @@
 import random
 
-def Hemligt(): #Slumpar fram ett slumpmässigt ord från ordlista.txt.
+def Hemligt():
     with open("Ordlista.txt", "r", encoding="utf-8") as fil:
         Ord = fil.read().splitlines()
     slump_ord = random.choice(Ord)
     return slump_ord
 
-def Kontroll(bokstav, Fel_bokstäver, Rätt_bokstäver): #Funktionen som kontrollerar att du skrivit in en bokstav, om du gissat bokstaven innan, om den är fel eller rätt.
+def Kontroll(bokstav, Fel_bokstäver, Rätt_bokstäver):
     if len(bokstav) != 1 or not bokstav.isalpha():
         print("Ogiltigt tecken. Skriv en bokstav (A–Ö).")
         return False
@@ -15,21 +15,27 @@ def Kontroll(bokstav, Fel_bokstäver, Rätt_bokstäver): #Funktionen som kontrol
         return False
     else:
         return True
-print(" ")
+    
+def Kontrollsvar(svar): #Funktionen som kontrollerar spelarens svar om den vill spela igen eller inte.
+    if not svar.strip().lower().isalpha() and svar.strip().lower() not in ("j", "n"):
+        print("Ogiltigt val. Skriv 'j' för ja eller 'n' för nej.")
+        return False
+    elif svar.strip().lower() == "j":
+        return True
+    
 print("Välkommen till Ord-Gissningsspelet! Du har 10 felgissningar innan ordet avslöjas.")
 
-while True:  #Yttre loop för "spela igen" som är oändlig tills spelaren väljer att sluta spela
-    #olika variabler som behövs för spelet
-    Fel_bokstäver = [] 
+while True:  #Yttre loop för "spela igen"
+    Fel_bokstäver = []
     Rätt_bokstäver = []
     Antal_gissningar = 10
     hemligt_ord = Hemligt()
     gissning = ["_"] * len(hemligt_ord)
     
-    print("\nDet hemliga ordet har", len(hemligt_ord), "bokstäver.") #Informerar spelaren om hur många bokstäver det hemliga ordet har
+    print("\nDet hemliga ordet har", len(hemligt_ord), "bokstäver.")
     print(" ".join(gissning))
 
-    while Antal_gissningar > 0: #Inre loop för själva gissningsspelet
+    while Antal_gissningar > 0:
         str1 = input("Skriv en bokstav:  ")
 
         if not Kontroll(str1, Fel_bokstäver, Rätt_bokstäver):
@@ -47,20 +53,24 @@ while True:  #Yttre loop för "spela igen" som är oändlig tills spelaren välj
             if bokstav.upper() == str1.upper():
                 gissning[i] = bokstav
 
-        #Det som skrivs ut efter gissingsrundan
         print(" ".join(gissning))
         print("Gissningar kvar:", Antal_gissningar)
         print("Felgissade bokstäver:", Fel_bokstäver)
         print(" ")
-
         if "_" not in gissning:
-            print("Bra jobbat! Du gissade rätt ord. :", hemligt_ord) #Vinstmeddelande
+            print("Bra jobbat! Du gissade rätt ord. :", hemligt_ord)
             break
 
     if Antal_gissningar == 0:
-        print("Du förlorade! Ordet var:", hemligt_ord) #Förlustmeddelande
+        print("Du förlorade! Ordet var:", hemligt_ord)
 
-    Spela_igen = input("Vill du spela igen? (j/n): ").lower() #Frågar spelaren om den vill spela igen
-    if Spela_igen != "j":
-        print("Tack för att du spelade!")
-        break
+    while True: #Loop för att fråga om spelaren vill spela igen tills ett giltigt svar ges
+        Spela_igen = input("Vill du spela igen? (j/n): ")
+        Kontrollsvar(Spela_igen)
+        if Kontrollsvar(Spela_igen) == True:
+            break
+        elif Spela_igen.strip().lower() == "n":
+            print("Tack för att du spelade!")
+            exit()
+
+
