@@ -52,7 +52,7 @@ Lösts: Koden fungerar nu. Flyttat ut Fel_gissningar, Rätt_Gissningar och Antal
 4/12-25
 Medlemmar som deltagit: Polina, Frida, Ella
 Polina: Skrivit kommentarer
-Frida: Skrivit kommentarer, lagt in printa fel bokstavs-listan/gissade
+Frida: Skrivit kommentarer, lagt in printa felbokstavs-listan
 Ella: Skrivit kommentarer
 Problem: Inga
 Lösts: Ingenting

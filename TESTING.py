@@ -18,7 +18,7 @@ def Kontroll(bokstav, Fel_bokstäver, Rätt_bokstäver):
     
 print("Välkommen till Ord-Gissningsspelet! Du har 10 felgissningar innan ordet avslöjas.")
 
-while True:  # Yttre loop för "spela igen"
+while True:  #Yttre loop för "spela igen"
     Fel_bokstäver = []
     Rätt_bokstäver = []
     Antal_gissningar = 10
@@ -32,7 +32,7 @@ while True:  # Yttre loop för "spela igen"
         str1 = input("Skriv en bokstav:  ")
 
         if not Kontroll(str1, Fel_bokstäver, Rätt_bokstäver):
-            continue  # Hoppa över iterationen om bokstaven inte är giltig
+            continue  #Hoppa över iterationen om bokstaven inte är giltig
 
         if str1.upper() in hemligt_ord.upper():
             print("Rätt gissat!")
@@ -49,7 +49,7 @@ while True:  # Yttre loop för "spela igen"
         print(" ".join(gissning))
         print("Gissningar kvar:", Antal_gissningar)
         print("Felgissade bokstäver:", Fel_bokstäver)
-
+        print(" ")
         if "_" not in gissning:
             print("Bra jobbat! Du gissade rätt ord. :", hemligt_ord)
             break
