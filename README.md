@@ -48,3 +48,11 @@ Frida: Skrivit kod för spela igen
 Ella: Skrivit kod för spela igen.
 Problem: Koden fungerade inte, skrev bara ut att man ska gissa efter att man sagt att man vill spela igen.
 Lösts: Koden fungerar nu. Flyttat ut Fel_gissningar, Rätt_Gissningar och Antal_gissningar i en yttre loop så att det kommer med när den loopar.
+
+4/12-25
+Medlemmar som deltagit: Polina, Frida, Ella
+Polina:
+Frida:
+Ella:
+Problem:
+Lösts:
