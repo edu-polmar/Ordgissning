@@ -51,8 +51,8 @@ Lösts: Koden fungerar nu. Flyttat ut Fel_gissningar, Rätt_Gissningar och Antal
 
 4/12-25
 Medlemmar som deltagit: Polina, Frida, Ella
-Polina: Skrivit kommentarer, skapat en funktion för loopen för att fråga om spelaren vill spela igen. Loopen gäller tills användaren skriver en gilltig input.
-Frida: Skrivit kommentarer, lagt in printa fel bokstavs-listan/gissade
-Ella: Skrivit kommentarer
-Problem: Inga
-Lösts: Ingenting
+Polina: Skrivit kommentarer, skapat en funktion för loopen för att fråga om spelaren vill spela igen. Loopen gäller tills användaren skriver en giltig input.
+Frida: Skrivit kommentarer, fixat så att listan av gissade bokstäver hänger med under spelets gång och syns.
+Ella: Skrivit kommentarer, kodat
+Problem: Den avslutade spelet om man svarade annat än "j"
+Lösts: En funktion för loopen "spela igen" som inte avslutas förrens en giltig input skrivs in.
