@@ -83,3 +83,7 @@ Frida: Skrivit kommentarer, lagt in printa fel bokstavs-listan/gissade
 Ella: Skrivit kommentarer
 Problem: Inga
 Lösts: Ingenting
+
+08/12-25
+medlemar som deltagit: ella
+ella: gått igenom kod, rättat till oh fixat
