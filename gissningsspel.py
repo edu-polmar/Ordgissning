@@ -1,16 +1,12 @@
-#Funktionen för att slumpa fram ett ord från ordlistan
 import random
-def Hemligt():
+
+def Hemligt(): #Slumpar fram ett slumpmässigt ord från ordlista.txt.
     with open("Ordlista.txt", "r", encoding="utf-8") as fil:
         Ord = fil.read().splitlines()
     slump_ord = random.choice(Ord)
     return slump_ord
 
-print("Välkommen till Ord-Gissningsspelet! Du ska gissa ett ord på X antal bokstäver. Du har 10 felgissningar innan det Hemliga Ordet avslöjas. Lycka till!")
-
-#Ber dig skriva in en bokstav och gör den till en stor om du skrivit in en liten.
-
-def Kontroll(bokstav):
+def Kontroll(bokstav, Fel_bokstäver, Rätt_bokstäver): #Funktionen som kontrollerar att du skrivit in en bokstav, om du gissat bokstaven innan, om den är fel eller rätt.
     if len(bokstav) != 1 or not bokstav.isalpha():
         print("Ogiltigt tecken. Skriv en bokstav (A–Ö).")
         return False
@@ -20,10 +16,7 @@ def Kontroll(bokstav):
     else:
         return True
 
-hemligt_ord = Hemligt() #Hämtar slumpat ord från ordlistan (filen)
-gissning = ["_"] * len(hemligt_ord)
-print("Det hemliga ordet har", len(hemligt_ord),"bokstäver.")
-print("_". join(gissning))
+print("Välkommen till Ord-Gissningsspelet! Du har 10 felgissningar innan ordet avslöjas.")
 
 Fel_bokstäver = []
 Rätt_bokstäver = []
