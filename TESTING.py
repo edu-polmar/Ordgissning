@@ -16,15 +16,22 @@ def Kontroll(bokstav, Fel_bokstäver, Rätt_bokstäver):
     else:
         return True
     
+
 print("Välkommen till Ord-Gissningsspelet! Du har 10 felgissningar innan ordet avslöjas.")
 
-<<<<<<< HEAD
-print("Välkommen till Ord-Gissningsspelet! Du har 10 felgissningar innan ordet avslöjas.")
-
-while True:  # Yttre loop för "spela igen"
-=======
 while True:  #Yttre loop för "spela igen"
->>>>>>> c4cb3755f83388791b7353b07319f082d5f78c9d
+
+def Kontrollsvar(svar): #Funktionen som kontrollerar spelarens svar om den vill spela igen eller inte.
+    if not svar.strip().lower().isalpha() and svar.strip().lower() not in ("j", "n"):
+        print("Ogiltigt val. Skriv 'j' för ja eller 'n' för nej.")
+        return False
+    elif svar.strip().lower() == "j":
+        return True
+    
+print("Välkommen till Ord-Gissningsspelet! Du har 10 felgissningar innan ordet avslöjas.")
+
+while True:  #Yttre loop för "spela igen"
+
     Fel_bokstäver = []
     Rätt_bokstäver = []
     Antal_gissningar = 10
@@ -37,12 +44,13 @@ while True:  #Yttre loop för "spela igen"
     while Antal_gissningar > 0:
         str1 = input("Skriv en bokstav:  ")
 
+
         if not Kontroll(str1, Fel_bokstäver, Rätt_bokstäver):
-<<<<<<< HEAD
+
             continue  # Hoppa över iterationen om bokstaven inte är giltig
-=======
+
             continue  #Hoppa över iterationen om bokstaven inte är giltig
->>>>>>> c4cb3755f83388791b7353b07319f082d5f78c9d
+
 
         if str1.upper() in hemligt_ord.upper():
             print("Rätt gissat!")
@@ -58,12 +66,12 @@ while True:  #Yttre loop för "spela igen"
 
         print(" ".join(gissning))
         print("Gissningar kvar:", Antal_gissningar)
-<<<<<<< HEAD
 
-=======
+
+
         print("Felgissade bokstäver:", Fel_bokstäver)
         print(" ")
->>>>>>> c4cb3755f83388791b7353b07319f082d5f78c9d
+
         if "_" not in gissning:
             print("Bra jobbat! Du gissade rätt ord. :", hemligt_ord)
             break
@@ -75,5 +83,43 @@ while True:  #Yttre loop för "spela igen"
     if Spela_igen != "j":
         print("Tack för att du spelade!")
         break
+
+
+
+        if not Kontroll(str1, Fel_bokstäver, Rätt_bokstäver):
+            continue  #Hoppa över iterationen om bokstaven inte är giltig
+
+        if str1.upper() in hemligt_ord.upper():
+            print("Rätt gissat!")
+            Rätt_bokstäver.append(str1.upper())
+        else:
+            print("Fel gissat, försök igen!")
+            Fel_bokstäver.append(str1.upper())
+            Antal_gissningar -= 1
+
+        for i, bokstav in enumerate(hemligt_ord):
+            if bokstav.upper() == str1.upper():
+                gissning[i] = bokstav
+
+        print(" ".join(gissning))
+        print("Gissningar kvar:", Antal_gissningar)
+        print("Felgissade bokstäver:", Fel_bokstäver)
+        print(" ")
+        if "_" not in gissning:
+            print("Bra jobbat! Du gissade rätt ord. :", hemligt_ord)
+            break
+
+    if Antal_gissningar == 0:
+        print("Du förlorade! Ordet var:", hemligt_ord)
+
+    while True: #Loop för att fråga om spelaren vill spela igen tills ett giltigt svar ges
+        Spela_igen = input("Vill du spela igen? (j/n): ")
+        Kontrollsvar(Spela_igen)
+        if Kontrollsvar(Spela_igen) == True:
+            break
+        elif Spela_igen.strip().lower() == "n":
+            print("Tack för att du spelade!")
+            exit()
+
 
 

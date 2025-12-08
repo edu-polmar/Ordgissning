@@ -35,7 +35,6 @@ Problem: skriver inte utt ordet efter gissning. Loopen inte klar. Kan gissa samm
 Lösts: Fungerar nu. Den räknar ned gissningar och avslutar spelet när du använt upp alla felgissningar. Loopen fungerar.
 
 24/11-25
-<<<<<<< HEAD
 medlemar som deltagit: polina och ella
 polina: fixat koden så att koden kontrollerar ifall spelarens gissning har redan testats. Därefter skriver ut ifall det händer.
 ella:fixat koden så att koden skriver ut dom rätt gissade bokstäverna på "rätt plats"
@@ -48,8 +47,7 @@ polina: fixat så det inte är understräck mellan det gissade bokstäverna till
 ella: fixat så att man kan se vilka bokstäver som är rätt gissade i rätt ordning
 problem: att få ellas ändringar att laddas upp
 löst: fungerar nu, den lägger in och updaterar koden så att alla kan se den
-=======
->>>>>>> c4cb3755f83388791b7353b07319f082d5f78c9d
+
 Medlemmar som deltagit: Polina och Ella
 Polina: fixat koden så att koden kontrollerar ifall spelarens gissning har redan testats. Därefter skriver ut ifall det händer.
 Ella:fixat koden så att koden skriver ut dom rätt gissade bokstäverna på "rätt plats".
@@ -63,8 +61,6 @@ Frida: Skrivit kod för spela igen
 Ella: Skrivit kod för spela igen.
 Problem: Koden fungerade inte, skrev bara ut att man ska gissa efter att man sagt att man vill spela igen.
 Lösts: Koden fungerar nu. Flyttat ut Fel_gissningar, Rätt_Gissningar och Antal_gissningar i en yttre loop så att det kommer med när den loopar.
-<<<<<<< HEAD
-=======
 
 4/12-25
 Medlemmar som deltagit: Polina, Frida, Ella
@@ -73,4 +69,17 @@ Frida: Skrivit kommentarer, lagt in printa felbokstavs-listan
 Ella: Skrivit kommentarer
 Problem: Inga
 Lösts: Ingenting
->>>>>>> c4cb3755f83388791b7353b07319f082d5f78c9d
+
+Polina: Skrivit kod för spela igen.
+Frida: Skrivit kod för spela igen.
+Ella: Skrivit kod för spela igen.
+Problem: Koden fungerade inte, skrev bara ut att man ska gissa efter att man sagt att man vill spela igen.
+Lösts: Koden fungerar nu. Flyttat ut Fel_gissningar, Rätt_Gissningar och Antal_gissningar i en yttre loop så att det kommer med när den loopar.
+
+4/12-25
+Medlemmar som deltagit: Polina, Frida, Ella
+Polina: Skrivit kommentarer, skapat en funktion för loopen för att fråga om spelaren vill spela igen. Loopen gäller tills användaren skriver en gilltig input.
+Frida: Skrivit kommentarer, lagt in printa fel bokstavs-listan/gissade
+Ella: Skrivit kommentarer
+Problem: Inga
+Lösts: Ingenting
