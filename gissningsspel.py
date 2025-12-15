@@ -22,7 +22,8 @@ def Kontrollsvar(svar): #Funktionen som kontrollerar spelarens svar om den vill 
         return False
     elif svar.strip().lower() == "j":
         return True
-    
+
+print(" ") 
 print("Välkommen till Ord-Gissningsspelet! Du har 10 felgissningar innan ordet avslöjas.")
 
 while True:  #Yttre loop för "spela igen"
