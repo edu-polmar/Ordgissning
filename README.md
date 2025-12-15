@@ -35,6 +35,19 @@ Problem: skriver inte utt ordet efter gissning. Loopen inte klar. Kan gissa samm
 Lösts: Fungerar nu. Den räknar ned gissningar och avslutar spelet när du använt upp alla felgissningar. Loopen fungerar.
 
 24/11-25
+medlemar som deltagit: polina och ella
+polina: fixat koden så att koden kontrollerar ifall spelarens gissning har redan testats. Därefter skriver ut ifall det händer.
+ella:fixat koden så att koden skriver ut dom rätt gissade bokstäverna på "rätt plats"
+problem: att koden skriver ut vilka bokstäver som du gissat rätt på rätt plats
+löst: fungerar nu, lägger ut dom rätt gissade bokstäverna på rätt plats
+
+27/11-25
+medlemmar som deltagit: polina och ella
+polina: fixat så det inte är understräck mellan det gissade bokstäverna till ordet och säger till om du redan har gissat en bokstav så att du inte kan gissa samma bokstav fler gånger
+ella: fixat så att man kan se vilka bokstäver som är rätt gissade i rätt ordning
+problem: att få ellas ändringar att laddas upp
+löst: fungerar nu, den lägger in och updaterar koden så att alla kan se den
+
 Medlemmar som deltagit: Polina och Ella
 Polina: fixat koden så att koden kontrollerar ifall spelarens gissning har redan testats. Därefter skriver ut ifall det händer.
 Ella:fixat koden så att koden skriver ut dom rätt gissade bokstäverna på "rätt plats".
@@ -43,6 +56,20 @@ Löst: fungerar nu, lägger ut dom rätt gissade bokstäverna på rätt plats.
 
 1/12-25
 Medlemmar som deltagit: Polina, Frida, Ella
+Polina: Skrivit kod för spela igen
+Frida: Skrivit kod för spela igen
+Ella: Skrivit kod för spela igen.
+Problem: Koden fungerade inte, skrev bara ut att man ska gissa efter att man sagt att man vill spela igen.
+Lösts: Koden fungerar nu. Flyttat ut Fel_gissningar, Rätt_Gissningar och Antal_gissningar i en yttre loop så att det kommer med när den loopar.
+
+4/12-25
+Medlemmar som deltagit: Polina, Frida, Ella
+Polina: Skrivit kommentarer
+Frida: Skrivit kommentarer, lagt in printa felbokstavs-listan
+Ella: Skrivit kommentarer
+Problem: Inga
+Lösts: Ingenting
+
 Polina: Skrivit kod för spela igen.
 Frida: Skrivit kod för spela igen.
 Ella: Skrivit kod för spela igen.
@@ -51,8 +78,8 @@ Lösts: Koden fungerar nu. Flyttat ut Fel_gissningar, Rätt_Gissningar och Antal
 
 4/12-25
 Medlemmar som deltagit: Polina, Frida, Ella
-Polina: Skrivit kommentarer, skapat en funktion för loopen för att fråga om spelaren vill spela igen. Loopen gäller tills användaren skriver en giltig input.
-Frida: Skrivit kommentarer, fixat så att listan av gissade bokstäver hänger med under spelets gång och syns.
-Ella: Skrivit kommentarer, kodat
-Problem: Den avslutade spelet om man svarade annat än "j"
-Lösts: En funktion för loopen "spela igen" som inte avslutas förrens en giltig input skrivs in.
+Polina: Skrivit kommentarer, skapat en funktion för loopen för att fråga om spelaren vill spela igen. Loopen gäller tills användaren skriver en gilltig input.
+Frida: Skrivit kommentarer, lagt in printa fel bokstavs-listan/gissade
+Ella: Skrivit kommentarer
+Problem: Inga
+Lösts: Ingenting

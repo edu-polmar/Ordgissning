@@ -1,12 +1,17 @@
 import random
 
 def Hemligt():
+#Slumpar fram ett slumpmässigt ord från ordlista.txt.
+
     with open("Ordlista.txt", "r", encoding="utf-8") as fil:
         Ord = fil.read().splitlines()
     slump_ord = random.choice(Ord)
     return slump_ord
 
-def Kontroll(bokstav, Fel_bokstäver, Rätt_bokstäver):
+
+def Kontroll(bokstav, Fel_bokstäver, Rätt_bokstäver): #Funktionen som kontrollerar att du skrivit in en bokstav, om du gissat bokstaven innan, om den är fel eller rätt.
+
+
     if len(bokstav) != 1 or not bokstav.isalpha():
         print("Ogiltigt tecken. Skriv en bokstav (A–Ö).")
         return False
@@ -26,6 +31,7 @@ def Kontrollsvar(svar): #Funktionen som kontrollerar spelarens svar om den vill 
 print(" ") 
 print("Välkommen till Ord-Gissningsspelet! Du har 10 felgissningar innan ordet avslöjas.")
 
+
 while True:  #Yttre loop för "spela igen"
     Fel_bokstäver = []
     Rätt_bokstäver = []
@@ -35,6 +41,7 @@ while True:  #Yttre loop för "spela igen"
     
     print("\nDet hemliga ordet har", len(hemligt_ord), "bokstäver.")
     print(" ".join(gissning))
+
 
     while Antal_gissningar > 0:
         str1 = input("Skriv en bokstav:  ")
